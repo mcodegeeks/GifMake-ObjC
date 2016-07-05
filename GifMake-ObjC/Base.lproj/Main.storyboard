@@ -15,10 +15,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ubs-xV-nhM" kind="relationship" relationship="rootViewController" id="9l5-8H-Xru"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nK-Y1-p7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="-353"/>
+            <point key="canvasLocation" x="24" y="-373"/>
         </scene>
         <!--Gif Editor View Controller-->
         <scene sceneID="wtf-2P-9lp">
@@ -51,6 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1RN-FC-CUb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08C-X2-rDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
