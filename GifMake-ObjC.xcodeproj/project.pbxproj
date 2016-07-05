@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		12AF2D991D2B40B40078228F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AF2D981D2B40B40078228F /* main.m */; };
 		12AF2D9C1D2B40B40078228F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AF2D9B1D2B40B40078228F /* AppDelegate.m */; };
-		12AF2D9F1D2B40B40078228F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AF2D9E1D2B40B40078228F /* ViewController.m */; };
 		12AF2DA21D2B40B40078228F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12AF2DA01D2B40B40078228F /* Main.storyboard */; };
 		12AF2DA41D2B40B40078228F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12AF2DA31D2B40B40078228F /* Assets.xcassets */; };
 		12AF2DA71D2B40B40078228F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12AF2DA51D2B40B40078228F /* LaunchScreen.storyboard */; };
+		12E5AB331D2C048E002A35B1 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E5AB321D2C048E002A35B1 /* WelcomeViewController.m */; };
+		12E5AB361D2C06D4002A35B1 /* GifEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E5AB351D2C06D4002A35B1 /* GifEditorViewController.m */; };
+		12E5AB391D2C06E4002A35B1 /* GifPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E5AB381D2C06E4002A35B1 /* GifPreviewViewController.m */; };
+		12E5AB3C1D2C06F4002A35B1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E5AB3B1D2C06F4002A35B1 /* DetailViewController.m */; };
+		12E5AB3F1D2C073D002A35B1 /* SavedGifsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E5AB3E1D2C073D002A35B1 /* SavedGifsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,20 @@
 		12AF2D981D2B40B40078228F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		12AF2D9A1D2B40B40078228F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12AF2D9B1D2B40B40078228F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		12AF2D9D1D2B40B40078228F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		12AF2D9E1D2B40B40078228F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		12AF2DA11D2B40B40078228F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12AF2DA31D2B40B40078228F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12AF2DA61D2B40B40078228F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12AF2DA81D2B40B40078228F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E5AB311D2C048E002A35B1 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		12E5AB321D2C048E002A35B1 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		12E5AB341D2C06D4002A35B1 /* GifEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifEditorViewController.h; sourceTree = "<group>"; };
+		12E5AB351D2C06D4002A35B1 /* GifEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifEditorViewController.m; sourceTree = "<group>"; };
+		12E5AB371D2C06E4002A35B1 /* GifPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifPreviewViewController.h; sourceTree = "<group>"; };
+		12E5AB381D2C06E4002A35B1 /* GifPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifPreviewViewController.m; sourceTree = "<group>"; };
+		12E5AB3A1D2C06F4002A35B1 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		12E5AB3B1D2C06F4002A35B1 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		12E5AB3D1D2C073D002A35B1 /* SavedGifsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedGifsViewController.h; sourceTree = "<group>"; };
+		12E5AB3E1D2C073D002A35B1 /* SavedGifsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedGifsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,7 @@
 		12AF2D8B1D2B40B40078228F = {
 			isa = PBXGroup;
 			children = (
+				12E5AB301D2C0145002A35B1 /* View Controllers */,
 				12AF2D961D2B40B40078228F /* GifMake-ObjC */,
 				12AF2D951D2B40B40078228F /* Products */,
 			);
@@ -60,8 +73,6 @@
 			children = (
 				12AF2D9A1D2B40B40078228F /* AppDelegate.h */,
 				12AF2D9B1D2B40B40078228F /* AppDelegate.m */,
-				12AF2D9D1D2B40B40078228F /* ViewController.h */,
-				12AF2D9E1D2B40B40078228F /* ViewController.m */,
 				12AF2DA01D2B40B40078228F /* Main.storyboard */,
 				12AF2DA31D2B40B40078228F /* Assets.xcassets */,
 				12AF2DA51D2B40B40078228F /* LaunchScreen.storyboard */,
@@ -77,6 +88,23 @@
 				12AF2D981D2B40B40078228F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12E5AB301D2C0145002A35B1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12E5AB311D2C048E002A35B1 /* WelcomeViewController.h */,
+				12E5AB321D2C048E002A35B1 /* WelcomeViewController.m */,
+				12E5AB341D2C06D4002A35B1 /* GifEditorViewController.h */,
+				12E5AB351D2C06D4002A35B1 /* GifEditorViewController.m */,
+				12E5AB371D2C06E4002A35B1 /* GifPreviewViewController.h */,
+				12E5AB381D2C06E4002A35B1 /* GifPreviewViewController.m */,
+				12E5AB3A1D2C06F4002A35B1 /* DetailViewController.h */,
+				12E5AB3B1D2C06F4002A35B1 /* DetailViewController.m */,
+				12E5AB3D1D2C073D002A35B1 /* SavedGifsViewController.h */,
+				12E5AB3E1D2C073D002A35B1 /* SavedGifsViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12AF2D9F1D2B40B40078228F /* ViewController.m in Sources */,
+				12E5AB361D2C06D4002A35B1 /* GifEditorViewController.m in Sources */,
 				12AF2D9C1D2B40B40078228F /* AppDelegate.m in Sources */,
+				12E5AB3F1D2C073D002A35B1 /* SavedGifsViewController.m in Sources */,
 				12AF2D991D2B40B40078228F /* main.m in Sources */,
+				12E5AB391D2C06E4002A35B1 /* GifPreviewViewController.m in Sources */,
+				12E5AB331D2C048E002A35B1 /* WelcomeViewController.m in Sources */,
+				12E5AB3C1D2C06F4002A35B1 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +335,7 @@
 				12AF2DAD1D2B40B40078228F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
