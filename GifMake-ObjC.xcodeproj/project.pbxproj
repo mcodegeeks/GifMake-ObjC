@@ -54,7 +54,6 @@
 		12AF2D8B1D2B40B40078228F = {
 			isa = PBXGroup;
 			children = (
-				12E5AB301D2C0145002A35B1 /* View Controllers */,
 				12AF2D961D2B40B40078228F /* GifMake-ObjC */,
 				12AF2D951D2B40B40078228F /* Products */,
 			);
@@ -73,11 +72,12 @@
 			children = (
 				12AF2D9A1D2B40B40078228F /* AppDelegate.h */,
 				12AF2D9B1D2B40B40078228F /* AppDelegate.m */,
-				12AF2DA01D2B40B40078228F /* Main.storyboard */,
-				12AF2DA31D2B40B40078228F /* Assets.xcassets */,
-				12AF2DA51D2B40B40078228F /* LaunchScreen.storyboard */,
-				12AF2DA81D2B40B40078228F /* Info.plist */,
+				12E5AB301D2C0145002A35B1 /* View Controllers */,
+				12E5AB581D2C14E9002A35B1 /* Categories */,
+				12E5AB571D2C14E2002A35B1 /* Model */,
+				12E5AB561D2C14DC002A35B1 /* Assets */,
 				12AF2D971D2B40B40078228F /* Supporting Files */,
+				12E5AB551D2C14CE002A35B1 /* Third Party Code */,
 			);
 			path = "GifMake-ObjC";
 			sourceTree = "<group>";
@@ -85,6 +85,7 @@
 		12AF2D971D2B40B40078228F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12AF2DA81D2B40B40078228F /* Info.plist */,
 				12AF2D981D2B40B40078228F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -93,18 +94,50 @@
 		12E5AB301D2C0145002A35B1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				12E5AB401D2C09A3002A35B1 /* DetailViewController.h */,
-				12E5AB411D2C09A3002A35B1 /* DetailViewController.m */,
 				12E5AB421D2C09A3002A35B1 /* GifEditorViewController.h */,
 				12E5AB431D2C09A3002A35B1 /* GifEditorViewController.m */,
-				12E5AB441D2C09A3002A35B1 /* GifPreviewViewController.h */,
-				12E5AB451D2C09A3002A35B1 /* GifPreviewViewController.m */,
 				12E5AB461D2C09A3002A35B1 /* SavedGifsViewController.h */,
 				12E5AB471D2C09A3002A35B1 /* SavedGifsViewController.m */,
+				12E5AB441D2C09A3002A35B1 /* GifPreviewViewController.h */,
+				12E5AB451D2C09A3002A35B1 /* GifPreviewViewController.m */,
+				12E5AB401D2C09A3002A35B1 /* DetailViewController.h */,
+				12E5AB411D2C09A3002A35B1 /* DetailViewController.m */,
 				12E5AB481D2C09A3002A35B1 /* WelcomeViewController.h */,
 				12E5AB491D2C09A3002A35B1 /* WelcomeViewController.m */,
 			);
 			name = "View Controllers";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		12E5AB551D2C14CE002A35B1 /* Third Party Code */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Third Party Code";
+			sourceTree = "<group>";
+		};
+		12E5AB561D2C14DC002A35B1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				12AF2DA31D2B40B40078228F /* Assets.xcassets */,
+				12AF2DA01D2B40B40078228F /* Main.storyboard */,
+				12AF2DA51D2B40B40078228F /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		12E5AB571D2C14E2002A35B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		12E5AB581D2C14E9002A35B1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
