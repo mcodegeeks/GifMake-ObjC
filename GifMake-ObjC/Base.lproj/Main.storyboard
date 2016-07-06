@@ -16,7 +16,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Ubs-xV-nhM" kind="relationship" relationship="rootViewController" id="9l5-8H-Xru"/>
+                        <segue destination="t65-Am-dfD" kind="relationship" relationship="rootViewController" id="Nwh-sp-aXi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nK-Y1-p7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,12 +107,26 @@
                     <view key="view" contentMode="scaleToFill" id="HDp-fu-1DV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUh-Ks-3Mh">
+                                <rect key="frame" x="270" y="520" width="60" height="60"/>
+                                <state key="normal" image="CreateButton"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TfX-gL-JhI" firstAttribute="top" secondItem="WUh-Ks-3Mh" secondAttribute="bottom" constant="20" id="1I8-Dy-ztu"/>
+                            <constraint firstItem="WUh-Ks-3Mh" firstAttribute="centerX" secondItem="HDp-fu-1DV" secondAttribute="centerX" id="ktW-Oq-RWq"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Jhs-nK-LsN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnV-3y-gUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743" y="1151"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CreateButton" width="60" height="60"/>
+    </resources>
 </document>
