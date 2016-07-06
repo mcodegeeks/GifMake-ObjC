@@ -10,6 +10,6 @@
 
 @interface WelcomeViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *gifImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

@@ -20,14 +20,7 @@
     // Do any additional setup after loading the view.
     
     UIImage *gifImage = [UIImage animatedImageWithGIFName: @"tinaFeyHiFive"];
-    self.gifImageView.image = gifImage;
-    /*
-    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource: @"tinaFeyHiFive" withExtension:@"gif"];
-    NSData *imageData = [NSData dataWithContentsOfURL: bundleURL];
-    UIImage *gifImage = animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceCreateWithData(toCF imageData, NULL));
-    
-    */
-    
+    self.imageView.image = gifImage;
 }
 
 - (void)didReceiveMemoryWarning {

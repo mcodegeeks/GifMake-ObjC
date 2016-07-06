@@ -21,22 +21,22 @@
 
 
 + (nullable UIImage *)animatedImageWithGIFData:(nullable NSData *)data {
-    return [UIImage animatedImageWithGIFReleasingImageSource: CGImageSourceCreateWithData(toCF data, NULL)];
+    return [UIImage animatedImageWithGIFSource: CGImageSourceCreateWithData(toCF data, NULL)];
 }
 
 + (nullable UIImage *)animatedImageWithGIFUrl:(nullable NSURL *)url {
-    return [UIImage animatedImageWithGIFReleasingImageSource: CGImageSourceCreateWithURL(toCF url, NULL)];
+    return [UIImage animatedImageWithGIFSource: CGImageSourceCreateWithURL(toCF url, NULL)];
 }
 
 + (nullable UIImage *)animatedImageWithGIFName:(nullable NSString *)name {
     NSURL *bundleURL = [[NSBundle mainBundle] URLForResource: name withExtension:@"gif"];
     NSData *imageData = [NSData dataWithContentsOfURL: bundleURL];
-    return [UIImage animatedImageWithGIFReleasingImageSource: CGImageSourceCreateWithData(toCF imageData, NULL)];
+    return [UIImage animatedImageWithGIFSource: CGImageSourceCreateWithData(toCF imageData, NULL)];
 }
 
 
 // private
-+ (nullable UIImage *)animatedImageWithGIFReleasingImageSource:(const CGImageSourceRef)source {
++ (nullable UIImage *)animatedImageWithGIFSource:(const CGImageSourceRef)source {
     size_t const count = CGImageSourceGetCount(source);
     CGImageRef images[count];
     int delayCentiseconds[count]; // in centiseconds

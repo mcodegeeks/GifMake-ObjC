@@ -159,7 +159,7 @@ Get started by tapping the button below</string>
                     </view>
                     <navigationItem key="navigationItem" id="Jhs-nK-LsN"/>
                     <connections>
-                        <outlet property="gifImageView" destination="51H-qU-ijo" id="d68-be-myF"/>
+                        <outlet property="imageView" destination="51H-qU-ijo" id="66f-Of-xKy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnV-3y-gUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
