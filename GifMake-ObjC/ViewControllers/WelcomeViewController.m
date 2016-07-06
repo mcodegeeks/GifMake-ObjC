@@ -7,6 +7,7 @@
 //
 
 #import "WelcomeViewController.h"
+#import "UIImage+animatedGIF.h"
 
 @interface WelcomeViewController ()
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIImage *gifImage = [UIImage animatedImageWithGIFName: @"tinaFeyHiFive"];
+    self.gifImageView.image = gifImage;
+    /*
+    NSURL *bundleURL = [[NSBundle mainBundle] URLForResource: @"tinaFeyHiFive" withExtension:@"gif"];
+    NSData *imageData = [NSData dataWithContentsOfURL: bundleURL];
+    UIImage *gifImage = animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceCreateWithData(toCF imageData, NULL));
+    
+    */
+    
 }
 
 - (void)didReceiveMemoryWarning {

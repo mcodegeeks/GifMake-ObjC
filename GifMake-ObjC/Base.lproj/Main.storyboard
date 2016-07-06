@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -108,16 +110,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="51H-qU-ijo" userLabel="Gif Image View">
+                                <rect key="frame" x="20" y="64" width="560" height="560"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="51H-qU-ijo" secondAttribute="height" multiplier="1:1" id="WMz-TR-dxz"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUh-Ks-3Mh">
                                 <rect key="frame" x="270" y="520" width="60" height="60"/>
                                 <state key="normal" image="CreateButton"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xC-r4-U8d">
-                                <rect key="frame" x="182" y="337" width="236" height="48"/>
+                                <rect key="frame" x="183" y="545" width="234" height="49"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="3" height="0.0"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceu-aR-fB6">
                                 <rect key="frame" x="147" y="439" width="306" height="41"/>
@@ -136,17 +144,23 @@ Get started by tapping the button below</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="51H-qU-ijo" firstAttribute="top" secondItem="z5l-uZ-cuX" secondAttribute="bottom" id="1Hh-Cg-V6J"/>
                             <constraint firstItem="TfX-gL-JhI" firstAttribute="top" secondItem="WUh-Ks-3Mh" secondAttribute="bottom" constant="20" id="1I8-Dy-ztu"/>
+                            <constraint firstItem="1xC-r4-U8d" firstAttribute="bottom" secondItem="51H-qU-ijo" secondAttribute="bottom" constant="-30" id="6Jn-IT-Nnv"/>
+                            <constraint firstItem="1xC-r4-U8d" firstAttribute="centerX" secondItem="51H-qU-ijo" secondAttribute="centerX" id="D9O-cc-3q1"/>
                             <constraint firstItem="XoH-sL-76Z" firstAttribute="bottom" secondItem="ceu-aR-fB6" secondAttribute="top" constant="-10" id="Poe-RI-5ye"/>
                             <constraint firstItem="ceu-aR-fB6" firstAttribute="bottom" secondItem="WUh-Ks-3Mh" secondAttribute="top" constant="-40" id="SAG-65-7u0"/>
+                            <constraint firstItem="51H-qU-ijo" firstAttribute="trailing" secondItem="HDp-fu-1DV" secondAttribute="trailingMargin" id="TjM-cr-QVr"/>
                             <constraint firstItem="ceu-aR-fB6" firstAttribute="centerX" secondItem="HDp-fu-1DV" secondAttribute="centerX" id="XFx-70-zwJ"/>
-                            <constraint firstItem="1xC-r4-U8d" firstAttribute="centerX" secondItem="HDp-fu-1DV" secondAttribute="centerX" id="iij-x0-Olo"/>
+                            <constraint firstItem="51H-qU-ijo" firstAttribute="leading" secondItem="HDp-fu-1DV" secondAttribute="leadingMargin" id="gvE-2y-GOz"/>
                             <constraint firstItem="WUh-Ks-3Mh" firstAttribute="centerX" secondItem="HDp-fu-1DV" secondAttribute="centerX" id="ktW-Oq-RWq"/>
                             <constraint firstItem="XoH-sL-76Z" firstAttribute="centerX" secondItem="HDp-fu-1DV" secondAttribute="centerX" id="l8y-LK-1IT"/>
-                            <constraint firstItem="1xC-r4-U8d" firstAttribute="bottom" secondItem="XoH-sL-76Z" secondAttribute="top" constant="-20" id="rEx-e8-cyL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jhs-nK-LsN"/>
+                    <connections>
+                        <outlet property="gifImageView" destination="51H-qU-ijo" id="d68-be-myF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DnV-3y-gUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
