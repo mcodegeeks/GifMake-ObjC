@@ -112,11 +112,38 @@
                                 <rect key="frame" x="270" y="520" width="60" height="60"/>
                                 <state key="normal" image="CreateButton"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xC-r4-U8d">
+                                <rect key="frame" x="182" y="337" width="236" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="3" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceu-aR-fB6">
+                                <rect key="frame" x="147" y="439" width="306" height="41"/>
+                                <string key="text">Let's create some GIFs!! 
+Get started by tapping the button below</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to GIFit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoH-sL-76Z">
+                                <rect key="frame" x="220" y="405" width="160" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TfX-gL-JhI" firstAttribute="top" secondItem="WUh-Ks-3Mh" secondAttribute="bottom" constant="20" id="1I8-Dy-ztu"/>
+                            <constraint firstItem="XoH-sL-76Z" firstAttribute="bottom" secondItem="ceu-aR-fB6" secondAttribute="top" constant="-10" id="Poe-RI-5ye"/>
+                            <constraint firstItem="ceu-aR-fB6" firstAttribute="bottom" secondItem="WUh-Ks-3Mh" secondAttribute="top" constant="-40" id="SAG-65-7u0"/>
+                            <constraint firstItem="ceu-aR-fB6" firstAttribute="centerX" secondItem="HDp-fu-1DV" secondAttribute="centerX" id="XFx-70-zwJ"/>
+                            <constraint firstItem="1xC-r4-U8d" firstAttribute="centerX" secondItem="HDp-fu-1DV" secondAttribute="centerX" id="iij-x0-Olo"/>
                             <constraint firstItem="WUh-Ks-3Mh" firstAttribute="centerX" secondItem="HDp-fu-1DV" secondAttribute="centerX" id="ktW-Oq-RWq"/>
+                            <constraint firstItem="XoH-sL-76Z" firstAttribute="centerX" secondItem="HDp-fu-1DV" secondAttribute="centerX" id="l8y-LK-1IT"/>
+                            <constraint firstItem="1xC-r4-U8d" firstAttribute="bottom" secondItem="XoH-sL-76Z" secondAttribute="top" constant="-20" id="rEx-e8-cyL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jhs-nK-LsN"/>
