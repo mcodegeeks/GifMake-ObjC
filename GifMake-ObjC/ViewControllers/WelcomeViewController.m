@@ -19,8 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIImage *gifImage = [UIImage animatedImageWithGIFName: @"tinaFeyHiFive"];
-    self.imageView.image = gifImage;
+    self.imageView.image = [UIImage animatedImageWithGIFName: @"tinaFeyHiFive"];
 }
 
 - (void)didReceiveMemoryWarning {
